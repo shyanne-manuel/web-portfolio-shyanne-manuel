@@ -13,20 +13,26 @@
 
 // media query mixins
 @mixin mobile {
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 37.4375rem) {
         @content;
         
     }
 }
 
 @mixin tablet {
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 37.5rem ) and (max-width: 48rem) {
       @content;
     }
   }
+
+@mixin tablet-desktop {
+  @media  screen and (min-width: 48.0625rem){
+    @content;
+  }
+  }
   
   @mixin desktop {
-    @media screen and (min-width: 769px) and (max-width: 1023px) {
+    @media screen and (min-width: 48.0625rem) and (max-width: 1023px) {
       @content;
     }
   }

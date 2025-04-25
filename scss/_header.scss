@@ -1,3 +1,77 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+
+.header-container {
+    @include flex-default-center(row, space-between, center);
+    padding: 0 .5rem;
+    margin: 1rem 0;
+
+    .logo {
+        @include flex-default-center(row, center, center);
+        p {
+            font-family: $font-heading;
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            font-weight: 700;
+            margin: 0;
+            display: inline-block;
+        }
+        .s-logo {
+            color: $tertiary-color;
+        }
+    }
+
+    .theme-toggle {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        svg {
+            width: clamp(1.75rem, 4vw, 3rem);
+            height: clamp(1.75rem, 4vw, 3rem);
+        }
+    }
+
+    @include tablet-desktop {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+
+        .logo {
+            grid-column: 2;
+            
+        }
+
+        .s-logo {
+            position: relative;
+        }
+
+        .m-logo {
+            position: relative;
+        }
+        .s-logo::before,
+        .m-logo::after {
+            content: '';
+            display: block;
+            width: 5vw;
+            height: .0625rem;
+            background-color: $secondary-color;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+        }
+
+        .s-logo::before {
+            left: -5.5vw;
+        }
+        .m-logo::after {
+            right: -5.5vw;
+        }
+
+
+        .theme-toggle {
+            grid-column: 3;
+            justify-self: end;
+        }
+    }
+}
