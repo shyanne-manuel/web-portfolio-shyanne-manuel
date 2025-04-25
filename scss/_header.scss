@@ -5,13 +5,13 @@
 .header-container {
     @include flex-default-center(row, space-between, center);
     padding: 0 .5rem;
-    margin: 1rem 0;
+    margin: 1rem;
 
     .logo {
         @include flex-default-center(row, center, center);
         p {
             font-family: $font-heading;
-            font-size: clamp(1.5rem, 4vw, 3rem);
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
             font-weight: 700;
             margin: 0;
             display: inline-block;
@@ -27,8 +27,8 @@
         cursor: pointer;
         padding: 0;
         svg {
-            width: clamp(1.75rem, 4vw, 3rem);
-            height: clamp(1.75rem, 4vw, 3rem);
+            width: clamp(2.5rem, 4vw, 3.5rem);
+            height: clamp(2.5rem, 4vw, 3.5rem);
         }
     }
 
