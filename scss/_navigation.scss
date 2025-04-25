@@ -1,0 +1,52 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+nav {
+
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+
+  ul {
+    @include flex-default-center(row, space-evenly, center);
+    list-style-type: none;
+    margin: 0;
+    padding: .25rem 0;
+
+  
+  }
+
+  @include desktop-large {
+    border-radius: 0px;
+    border: none;
+    background: none;
+    width: auto;
+    right: 0;
+    top: 25vh;
+    height: 100%;
+    box-shadow: none;
+    backdrop-filter: none;
+    ul {
+       flex-direction: column;
+        align-items: flex-end;
+        padding: 1rem;
+        justify-content: center;
+
+        li {
+            margin: 1rem;
+            padding: 0;
+        }
+    }
+  }
+}
