@@ -1,0 +1,21 @@
+@use 'variables' as*;
+
+
+body {
+    background-color: $base-color;
+    color: $contrast-color;
+    h1 {
+        font-family: $font-heading;
+    }
+    p {
+        font-family: $font-body;
+    }
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+            color: $tertiary-color;
+            text-decoration: underline;
+        }
+    }
+}

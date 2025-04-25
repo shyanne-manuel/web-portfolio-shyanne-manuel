@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+
+// Flexbox mixin for default center alignment
+@mixin flex-default-center($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+// *************
+
+
+// media query mixins
+@mixin mobile {
+    @media screen and (max-width: 30rem) {
+        @content;
+        
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+  
+  @mixin large-desktop {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+
+//   *************
