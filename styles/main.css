@@ -434,9 +434,9 @@ body a:hover {
 nav {
   border-radius: 10px 10px 0px 0px;
   border: 1px solid #fff;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  background: linear-gradient(180deg, rgba(3, 2, 2, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -520,6 +520,33 @@ nav ul {
     width: clamp(7rem, 10vw + 1rem, 30rem);
     text-align: left;
   }
+}
+
+.works-container {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+}
+.works-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #603813 0%, #b29f94 100%);
+  filter: blur(100px);
+  z-index: -1;
+}
+
+.work-card {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
 }
 
 /*# sourceMappingURL=main.css.map */
