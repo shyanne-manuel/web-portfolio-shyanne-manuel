@@ -25,6 +25,15 @@
     }
   }
 
+//  tablet size to desktop large
+
+@mixin tablet-large {
+    @media screen and (min-width: 37.5rem) {
+      @content;
+    }
+  }
+
+  //  desktop size to large desktop size
 @mixin desktop-large {
   @media  screen and (min-width: 48.0625rem){
     @content;

@@ -19,3 +19,27 @@ body {
         }
     }
 }
+
+// Typography
+
+.hero {
+
+    h1 {
+        
+        font-size: clamp(3rem, calc(5vw + 1rem), 8rem);
+    }
+
+    h2 {
+
+        font-size: clamp(1rem, calc(1vw + 1rem), 3rem);
+
+    }
+
+    p {
+        font-family: $font-heading;
+        font-size: clamp(1rem, calc(1vw + 1rem), 3rem);
+
+    }
+}
+
+
