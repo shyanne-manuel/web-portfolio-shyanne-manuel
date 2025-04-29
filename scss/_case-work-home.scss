@@ -1,0 +1,157 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.works-container {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  pointer-events: fill;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #603813 0%, #b29f94 100%);
+    filter: blur(100px);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  @include tablet-large {
+    @include flex-default-center(column, center, center);
+    h2 {
+    align-self: flex-start;
+      font-family: $font-heading;
+      /* Align the right edge to the center */
+      margin-right: 50%;
+      margin-left: auto;
+      padding-left: 0;
+      padding-right: 1rem;
+
+    }
+  }
+}
+
+.work-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem clamp(0.5rem, calc(1vw + 1rem), 2rem);
+
+  @include tablet-large {
+    width: 60vw;
+    margin: 0 15vw 0 5vw;
+    gap: 1rem;
+  }
+}
+
+.work-card {
+  width: 20rem;
+  padding: 1rem;
+  @include glassmorphism( 15px, 20px);
+  position: relative;
+  -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in;
+  overflow: hidden;
+
+  .work-card-image {
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #fff;
+    }
+  }
+
+  .work-card-content {
+    h3 {
+      font-family: $font-body;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    a {
+      margin-top: 3rem;
+      display: block;
+      text-align: right;
+      color: $contrast-color;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+
+  @include tablet-large {
+    width: clamp(3.5rem, calc(4vw + 1rem), 5rem);
+    padding: 0;
+    overflow: hidden;
+    -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in;
+
+    .work-card-image {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .50;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+      }
+
+    }
+    .work-card-content {
+      opacity: 0;
+    }
+    
+    &.active {
+        opacity: 1;
+      padding: 1rem;
+      flex: 1;
+      width: 100%;
+
+      .work-card-image {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .work-card-content {
+        opacity: 1;
+        h3 {
+          font-family: $font-body;
+          text-align: center;
+        }
+  
+        p {
+          text-align: center;
+        }
+  
+        a {
+          margin-top: 3rem;
+          display: block;
+          text-align: right;
+          color: $contrast-color;
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+  }
+}

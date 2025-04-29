@@ -336,6 +336,10 @@ body {
 body h1 {
   font-family: "Libre Bodoni", serif;
 }
+body h2 {
+  font-family: "Libre Bodoni", serif;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3.5rem);
+}
 body p {
   font-family: "Ubuntu", sans-serif;
 }
@@ -434,9 +438,9 @@ body a:hover {
 nav {
   border-radius: 10px 10px 0px 0px;
   border: 1px solid #fff;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  background: linear-gradient(180deg, rgba(3, 2, 2, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -457,7 +461,9 @@ nav ul {
     border-radius: 0px;
     border: none;
     background: none;
-    width: auto;
+    width: 6.25rem;
+    height: auto;
+    left: auto;
     right: 0;
     top: 25vh;
     height: 100%;
@@ -519,6 +525,152 @@ nav ul {
     bottom: auto;
     width: clamp(7rem, 10vw + 1rem, 30rem);
     text-align: left;
+  }
+}
+
+.works-container {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  pointer-events: fill;
+}
+.works-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #603813 0%, #b29f94 100%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+@media screen and (min-width: 37.5rem) {
+  .works-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .works-container h2 {
+    align-self: flex-start;
+    font-family: "Libre Bodoni", serif;
+    /* Align the right edge to the center */
+    margin-right: 50%;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+}
+
+.work-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem clamp(0.5rem, 1vw + 1rem, 2rem);
+}
+@media screen and (min-width: 37.5rem) {
+  .work-cards-container {
+    width: 60vw;
+    margin: 0 15vw 0 5vw;
+    gap: 1rem;
+  }
+}
+
+.work-card {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: 20px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in;
+  overflow: hidden;
+}
+.work-card .work-card-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.work-card .work-card-content h3 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.work-card .work-card-content p {
+  text-align: center;
+}
+.work-card .work-card-content a {
+  margin-top: 3rem;
+  display: block;
+  text-align: right;
+  color: #FFFBEF;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .work-card {
+    width: clamp(3.5rem, 4vw + 1rem, 5rem);
+    padding: 0;
+    overflow: hidden;
+    -webkit-transition: all 700ms ease-in-out;
+    transition: all 700ms ease-in;
+  }
+  .work-card .work-card-image {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  .work-card .work-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+  .work-card .work-card-content {
+    opacity: 0;
+  }
+  .work-card.active {
+    opacity: 1;
+    padding: 1rem;
+    flex: 1;
+    width: 100%;
+  }
+  .work-card.active .work-card-image {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  .work-card.active .work-card-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .work-card.active .work-card-content {
+    opacity: 1;
+  }
+  .work-card.active .work-card-content h3 {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+  }
+  .work-card.active .work-card-content p {
+    text-align: center;
+  }
+  .work-card.active .work-card-content a {
+    margin-top: 3rem;
+    display: block;
+    text-align: right;
+    color: #FFFBEF;
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 }
 
