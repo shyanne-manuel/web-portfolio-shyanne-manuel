@@ -1,0 +1,73 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+
+
+
+// Toolkit Accordion Styles
+.toolkit-accordion {
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // @include glassmorphism( 5px, 20px);
+      // border: none;
+      // border-radius: 10px 10px 5px 5px;
+      margin: .25rem;
+      padding: 0.75rem 1rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: inherit;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  
+      // &:hover {
+        
+      // }
+  
+      .icon {
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+    }
+  
+    .toolkit-item.active .icon {
+      transform: rotate(45deg);
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+  
+        li {
+          padding: 0.75rem 1rem;
+          color: #fff;
+          font-family: $font-body;
+        }
+      }
+    }
+  
+    .toolkit-item.active .accordion-content {
+      max-height: 12.5rem;
+      opacity: 1;
+    }
+  }
+
+  .toolkit-item {
+    @include glassmorphism( 10px, 20px);
+    margin: .25rem;
+  }

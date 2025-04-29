@@ -1,5 +1,6 @@
 @use 'variables' as*;
 
+// typography and base styles
 
 body {
     background-color: $base-color;
@@ -25,7 +26,7 @@ body {
     }
 }
 
-// hero specific styles
+// hero styles
 
 .hero {
 
@@ -46,6 +47,15 @@ body {
 
     }
 }
+
+// about section styles
+
+.toolkit-accordion h3,
+.accordion-content ul li {
+    font-family: $font-body;
+    color: white;
+}
+
 
 
 
