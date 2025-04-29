@@ -487,10 +487,6 @@ nav ul {
   }
 }
 
-.links {
-  display: none;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -672,6 +668,64 @@ nav ul {
     font-weight: 400;
     font-size: 1.5rem;
   }
+}
+
+.toolkit-accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: 20px;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eae3c0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.toolkit-accordion .accordion-header:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.toolkit-accordion .accordion-header .icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.toolkit-accordion .toolkit-item.active .icon {
+  transform: rotate(45deg);
+}
+.toolkit-accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.toolkit-accordion .accordion-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.toolkit-accordion .accordion-content ul li {
+  padding: 0.5rem 0;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+.toolkit-accordion .toolkit-item.active .accordion-content {
+  max-height: 12.5rem;
+  opacity: 1;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: 20px;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
