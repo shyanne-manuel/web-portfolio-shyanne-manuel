@@ -363,6 +363,12 @@ body a:hover {
   font-size: clamp(1rem, 1vw + 1rem, 3rem);
 }
 
+.toolkit-accordion h3,
+.accordion-content ul li {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -485,10 +491,6 @@ nav ul {
     font-size: 1.5rem;
     font-weight: 700;
   }
-}
-
-.links {
-  display: none;
 }
 
 .hero {
@@ -630,6 +632,9 @@ nav ul {
     height: 100%;
     opacity: 0.5;
   }
+  .work-card .work-card-image:hover {
+    opacity: 1;
+  }
   .work-card .work-card-image img {
     width: 100%;
     height: 100%;
@@ -672,6 +677,122 @@ nav ul {
     font-weight: 400;
     font-size: 1.5rem;
   }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 3rem 0.5rem;
+  gap: 2rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .about .about-title {
+    align-self: flex-start;
+    font-family: "Libre Bodoni", serif;
+    /* Align the right edge to the center */
+    margin-right: 50%;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 1rem;
+    text-align: right;
+  }
+}
+.about .about-title h2,
+.about .about-title h3 {
+  padding: 0;
+  margin: 0.25rem 0;
+}
+.about .about-title h3 {
+  font-size: 1rem;
+}
+.about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-content .toolkit-accordion {
+  order: 2;
+}
+.about .about-content .about-info {
+  order: 1;
+}
+@media screen and (min-width: 48.0625rem) {
+  .about .about-content {
+    width: 60vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: first baseline;
+    margin: 0.5rem auto;
+    gap: 2rem;
+  }
+  .about .about-content .toolkit-accordion {
+    order: 0;
+  }
+  .about .about-content .about-info {
+    order: 0;
+  }
+}
+
+.toolkit-accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.25rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.toolkit-accordion .accordion-header .icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.toolkit-accordion .toolkit-item.active .icon {
+  transform: rotate(45deg);
+}
+.toolkit-accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.toolkit-accordion .accordion-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.toolkit-accordion .accordion-content ul li {
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+.toolkit-accordion .toolkit-item.active .accordion-content {
+  max-height: 12.5rem;
+  opacity: 1;
+}
+
+.toolkit-item {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: 20px;
+  margin: 0.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

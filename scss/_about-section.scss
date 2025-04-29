@@ -1,0 +1,70 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+
+
+.about {
+    @include flex-default-center(column, center, flex-start);
+    padding: 1rem;
+    margin: 3rem .5rem;
+    gap: 2rem;
+
+    .about-title {
+        @include tablet-large {
+            align-self: flex-start;
+            font-family: $font-heading;
+            /* Align the right edge to the center */
+            margin-right: 50%;
+            margin-left: auto;
+            padding-left: 0;
+            padding-right: 1rem;
+            text-align: right;
+        }
+
+        h2,
+        h3 {
+            padding: 0;
+            margin: .25rem 0;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+    }
+
+    .about-content {
+        @include flex-default-center(column, center, center);
+
+        .toolkit-accordion {
+            order: 2;
+        }
+
+        .about-info {
+            order: 1;
+        }
+
+        @include desktop-large {
+
+            .toolkit-accordion{
+                order: 0;
+            }
+            .about-info {
+                order: 0;
+            }
+
+            width: 60vw;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: first baseline;
+            margin: .5rem auto;
+            gap: 2rem;
+
+        }
+    }
+
+
+
+}
