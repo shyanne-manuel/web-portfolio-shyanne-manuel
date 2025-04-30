@@ -1,0 +1,17 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+footer {
+@include flex-default-center();
+padding: 3rem;
+background-color: $base-color;
+
+&:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 0.0625rem;
+    background-color: $secondary-color;
+    margin-bottom: 1rem;
+}
+}

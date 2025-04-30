@@ -873,4 +873,21 @@ body .vertical-line::after {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #322100;
+}
+footer:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 0.0625rem;
+  background-color: #EFDB78;
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
