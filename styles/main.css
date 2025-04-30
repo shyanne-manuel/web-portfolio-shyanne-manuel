@@ -351,6 +351,9 @@ body a:hover {
   color: #EAE3C0;
   text-decoration: underline;
 }
+body .site-wrapper {
+  margin: 0 0.5rem;
+}
 
 .hero h1 {
   font-size: clamp(3rem, 5vw + 1rem, 8rem);
@@ -371,6 +374,12 @@ body a:hover {
 
 .contact p {
   font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+}
+
+.works-page p {
+  font-size: clamp(1rem, 0.5vw + 1rem, 2rem);
+  text-align: center;
+  margin: 0 0.5rem;
 }
 
 .header-container {
@@ -539,7 +548,7 @@ nav ul {
   position: relative;
   z-index: 1;
   padding: 1rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   pointer-events: fill;
 }
 .works-container::before {
@@ -888,6 +897,51 @@ footer:before {
   height: 0.0625rem;
   background-color: #EFDB78;
   margin-bottom: 1rem;
+}
+
+.works-hero {
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.project-overview {
+  width: 80vw;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: 20px;
+  z-index: 1;
+}
+.project-overview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(2deg, #b29f94 21.4%, #603813 91.86%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+@media screen and (min-width: 37.5rem) {
+  .project-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

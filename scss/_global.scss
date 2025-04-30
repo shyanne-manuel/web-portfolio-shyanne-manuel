@@ -24,6 +24,10 @@ body {
             text-decoration: underline;
         }
     }
+
+    .site-wrapper {
+        margin: 0 .5rem;
+    }
 }
 
 // hero styles
@@ -61,6 +65,16 @@ body {
 .contact {
     p {
         font-size: clamp(1rem, calc(1vw + 1rem), 1.5rem);
+    }
+}
+
+// case work styles
+
+.works-page {
+    p {
+        font-size: clamp(1rem, calc(.5vw + 1rem), 2rem);
+        text-align: center;
+        margin: 0 .5rem;
     }
 }
 
