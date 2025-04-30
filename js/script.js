@@ -1,3 +1,5 @@
+const verticalLine = document.querySelector('.vertical-line');
+
 document.addEventListener('DOMContentLoaded', () => {
 const workCard = document.querySelectorAll('.work-card');
 const accordionHeaders = document.querySelectorAll('.accordion-header');
@@ -36,4 +38,14 @@ accordionHeaders.forEach((header) => {
 
 });
 
+
+// center vertical line animations
+
+window.addEventListener('scroll', () => {
+    // Get the current scroll position
+    const scrollPosition = window.scrollY;
+    console.log(`Scroll Position: ${scrollPosition}`); 
+    // Update the CSS variable for translateY
+    verticalLine.style.setProperty('--translateY', `${scrollPosition}px`);
+  });
 

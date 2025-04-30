@@ -6,7 +6,7 @@
 .about {
     @include flex-default-center(column, center, flex-start);
     padding: 1rem;
-    margin: 3rem .5rem;
+    margin: 3rem 1rem;
     gap: 2rem;
 
     .about-title {
@@ -35,6 +35,7 @@
 
     .about-content {
         @include flex-default-center(column, center, center);
+        background-color: $base-color;
 
         .toolkit-accordion {
             order: 2;
@@ -45,6 +46,7 @@
         }
 
         @include desktop-large {
+            background-color: inherit;
 
             .toolkit-accordion{
                 order: 0;
