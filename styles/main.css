@@ -369,6 +369,10 @@ body a:hover {
   color: white;
 }
 
+.contact p {
+  font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -376,6 +380,7 @@ body a:hover {
   align-items: center;
   padding: 0 0.5rem;
   margin: 1rem;
+  background: #322100;
 }
 .header-container .logo {
   display: flex;
@@ -544,7 +549,7 @@ nav ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #603813 0%, #b29f94 100%);
+  background: linear-gradient(90deg, #B29F94 0%, #603813 100%);
   filter: blur(100px);
   z-index: -1;
   pointer-events: none;
@@ -685,7 +690,7 @@ nav ul {
   justify-content: center;
   align-items: flex-start;
   padding: 1rem;
-  margin: 3rem 0.5rem;
+  margin: 3rem 1rem;
   gap: 2rem;
 }
 @media screen and (min-width: 37.5rem) {
@@ -713,6 +718,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #322100;
 }
 .about .about-content .toolkit-accordion {
   order: 2;
@@ -722,6 +728,7 @@ nav ul {
 }
 @media screen and (min-width: 48.0625rem) {
   .about .about-content {
+    background-color: inherit;
     width: 60vw;
     height: auto;
     display: grid;
@@ -793,6 +800,77 @@ nav ul {
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
   backdrop-filter: 20px;
   margin: 0.25rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 3rem 0.5rem;
+  gap: 0.5rem;
+  background-color: #322100;
+}
+@media screen and (min-width: 37.5rem) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: 50vw;
+    height: auto;
+    gap: 1rem;
+  }
+  .contact p {
+    text-align: center;
+  }
+}
+.contact h2 {
+  margin: 0;
+}
+.contact .links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contact .links ul li svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #EAE3C0;
+  transition: fill 0.3s ease;
+}
+.contact .links ul li svg:hover {
+  fill: #FFFBEF;
+}
+
+body {
+  position: relative;
+}
+body .vertical-line::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 90vh;
+  background-color: #C8B269;
+  top: 0;
+  left: 0;
+  margin-left: 1.25rem;
+  z-index: -5;
+  transform: translateY(var(--translateY, 0));
+  transition: transform 1s ease-out;
+}
+@media screen and (min-width: 37.5rem) {
+  body .vertical-line::after {
+    left: 50%;
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

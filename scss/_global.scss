@@ -57,5 +57,11 @@ body {
 }
 
 
+// contact section styles
+.contact {
+    p {
+        font-size: clamp(1rem, calc(1vw + 1rem), 1.5rem);
+    }
+}
 
 
