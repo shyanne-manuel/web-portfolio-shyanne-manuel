@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shyanne Manuel | Movie Database - React JS</title>
+        <script src="js/script.js" defer></script>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Go to homepage">
+                <p class="s-logo">S</p>
+                <p class="m-logo">M</p>
+            </a>
+            <button class="theme-toggle" id="theme-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#C8B269"><path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Z"/></svg>
+            </button>
+            
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none" aria-label="Home Icon">
+                        <path d="M26.292 28.2598C26.7981 28.2599 27.208 28.6706 27.208 29.1768V38.7598H19.625V29.1768C19.625 28.6706 20.0359 28.2599 20.542 28.2598H26.292ZM23.417 7.99902C25.544 7.99902 27.33 9.52969 30.9014 12.5908L32.8174 14.2344C34.7931 15.9279 35.7815 16.7743 36.3076 17.918C36.8337 19.0617 36.834 20.3635 36.834 22.9658V31.0928C36.834 34.7068 36.8336 36.514 35.7109 37.6367C34.5924 38.7552 32.7948 38.7588 29.208 38.7588V29.1768C29.208 27.566 27.9027 26.2599 26.292 26.2598H20.542C18.9313 26.2599 17.625 27.566 17.625 29.1768V38.7588C14.0389 38.7588 12.2414 38.7551 11.123 37.6367C10.0004 36.514 10 34.7068 10 31.0928V22.9658C10 20.3635 10.0003 19.0617 10.5264 17.918C11.0524 16.7743 12.0409 15.9279 14.0166 14.2344L15.9326 12.5908C19.5039 9.52969 21.2899 7.99902 23.417 7.99902Z" fill="#EAE3C0"/>
+                        </svg>
+                        <p class="nav-text" style="display: none;">Home</p>
+                    </a>
+             </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-label="Portfolio Icon">
+                            <path d="M14.2041 14.333C14.3593 14.333 14.4433 14.3331 14.5059 14.3359C14.5281 14.337 14.5416 14.3381 14.5488 14.3389L14.6064 14.3623L14.6387 14.3916C14.6849 14.4338 14.7448 14.4928 14.8545 14.6025L18.7295 18.4775L19.0107 18.752C19.1126 18.8442 19.2239 18.9335 19.3467 19.0088L19.4971 19.0938C19.651 19.1722 19.8141 19.232 19.9824 19.2725L20.1934 19.3105C20.4031 19.337 20.6098 19.333 20.7939 19.333H31.666C31.6659 20.129 31.6611 20.5354 31.502 20.8477C31.3582 21.1298 31.1288 21.3591 30.8467 21.5029C30.5258 21.6664 30.1057 21.667 29.2656 21.667H10.7324C9.89234 21.667 9.47223 21.6664 9.15137 21.5029C8.86921 21.3591 8.63989 21.1298 8.49609 20.8477C8.3326 20.5268 8.33203 20.1067 8.33203 19.2666V14.333H14.2041ZM23.999 8.4668C23.999 9.01021 23.998 9.47871 24.0293 9.8623C24.0576 10.2081 24.1156 10.5527 24.2588 10.8867L24.3262 11.0293C24.5779 11.5231 24.9608 11.9365 25.4307 12.2246L25.6367 12.3398C26.015 12.5325 26.4085 12.6044 26.8037 12.6367C27.1874 12.6681 27.6557 12.667 28.1992 12.667H31.666V17.333H20.7939C20.6387 17.333 20.5547 17.3329 20.4922 17.3301L20.4492 17.3271L20.3916 17.3037C20.4034 17.311 20.3988 17.3104 20.3594 17.2744L20.1436 17.0635L16.2686 13.1885C16.1382 13.0581 15.9943 12.909 15.8271 12.7793L15.6514 12.6572C15.5037 12.5668 15.346 12.4938 15.1816 12.4404L15.0156 12.3936C14.7358 12.3264 14.4499 12.333 14.2041 12.333H8.33203V7.40039C8.33203 6.56045 8.33268 6.14018 8.49609 5.81934C8.6399 5.53709 8.86912 5.3069 9.15137 5.16309C9.47221 4.99968 9.89248 5 10.7324 5H23.999V8.4668ZM26.0029 5C26.2475 5 26.3703 4.99971 26.4854 5.02734C26.5873 5.05185 26.685 5.09269 26.7744 5.14746C26.8752 5.20929 26.962 5.29601 27.1348 5.46875L31.1973 9.53125C31.3702 9.70417 31.4567 9.79069 31.5186 9.8916C31.5733 9.98102 31.6132 10.0787 31.6377 10.1807C31.6653 10.2958 31.666 10.4185 31.666 10.6631V10.667H28.1992C27.6227 10.667 27.2501 10.6657 26.9668 10.6426C26.6955 10.6204 26.5944 10.5828 26.5449 10.5576L26.4111 10.4756C26.2843 10.3834 26.1803 10.262 26.1084 10.1211L26.0869 10.0723C26.0647 10.0104 26.0401 9.90244 26.0234 9.69922C26.0003 9.41593 25.999 9.04317 25.999 8.4668V5H26.0029Z" fill="#EAE3C0"/>
+                            <path d="M5 17.4C5 16.5599 5 16.1399 5.16349 15.819C5.3073 15.5368 5.53677 15.3073 5.81901 15.1635C6.13988 15 6.55992 15 7.4 15H14.2047C14.4982 15 14.645 15 14.7831 15.0332C14.9055 15.0626 15.0226 15.111 15.1299 15.1768C15.251 15.251 15.3548 15.3548 15.5624 15.5624L19.4376 19.4376C19.6452 19.6452 19.749 19.749 19.8701 19.8232C19.9774 19.889 20.0945 19.9374 20.2169 19.9668C20.355 20 20.5018 20 20.7953 20H32.6C33.4401 20 33.8601 20 34.181 20.1635C34.4632 20.3073 34.6927 20.5368 34.8365 20.819C35 21.1399 35 21.5599 35 22.4V34.2667C35 35.1067 35 35.5268 34.8365 35.8477C34.6927 36.1299 34.4632 36.3594 34.181 36.5032C33.8601 36.6667 33.4401 36.6667 32.6 36.6667H7.4C6.55992 36.6667 6.13988 36.6667 5.81901 36.5032C5.53677 36.3594 5.3073 36.1299 5.16349 35.8477C5 35.5268 5 35.1067 5 34.2667V17.4Z" fill="#EAE3C0"/>
+                          </svg>
+                          <p class="nav-text" style="display: none;">Works</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none" aria-label="About Icon">
+                            <path d="M27.8666 27.2119C28.4562 27.0891 28.807 26.4743 28.5471 25.931C27.5674 23.8833 25.864 22.0832 23.6203 20.7441C21.0006 19.1807 17.7909 18.3333 14.4889 18.3333C11.1869 18.3333 7.97713 19.1807 5.35747 20.7441C3.11382 22.0832 1.41041 23.8833 0.430722 25.931C0.170785 26.4743 0.521527 27.089 1.11114 27.2119L6.32803 28.2992C11.7108 29.4209 17.267 29.4209 22.6497 28.2992L27.8666 27.2119Z" fill="#EAE3C0"/>
+                            <circle cx="14.3333" cy="8.33333" r="8.33333" fill="#EAE3C0"/>
+                          </svg>
+                          <p class="nav-text" style="display: none;">About</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-label="Contact Icon">
+                            <path d="M9.67962 9.95196L12.9245 6.70711C13.315 6.31658 13.9482 6.31658 14.3387 6.70711L19.0297 11.3982C19.4203 11.7887 19.4203 12.4218 19.0297 12.8124L15.9218 15.9203C15.4656 16.3765 15.3525 17.0734 15.641 17.6505C17.3089 20.9863 20.0137 23.6911 23.3495 25.359C23.9266 25.6475 24.6235 25.5344 25.0797 25.0782L28.1876 21.9703C28.5782 21.5797 29.2113 21.5797 29.6018 21.9703L34.2929 26.6613C34.6834 27.0518 34.6834 27.685 34.2929 28.0755L31.048 31.3204C28.9367 33.4317 25.5941 33.6693 23.2054 31.8777L17.7865 27.8135C16.0429 26.5059 14.4941 24.9571 13.1865 23.2135L9.12226 17.7946C7.33072 15.4059 7.56827 12.0633 9.67962 9.95196Z" fill="#EAE3C0"/>
+                          </svg>
+                          <p class="nav-text" style="display: none;">Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="works-page site-wrapper vertical-line">
+            
+            <section class="hero" aria-label="Hero Section">
+                <div class="hero-name works-hero">
+                    <h1>Movie Database</br>FilmZone</h1>
+                    <h2>REACT | CSS | REST API</h2>
+                </div>
+                <p>A React Based Website</p>
+            </section>
+
+            <section class="project-overview" aria-label="Movie Database Website project overview">
+                <div class="project-description">
+                    <p>This dynamic movie database is built using React.js, CSS for visually appealing and responsive design and integration with TMDB API to fetch real-time data. For this project, I collaboratively worked with two colleagues. We decided to use the design mockup I created and worked our way to create our first functioning Headless CMS website.</p>
+                </div>
+                <div class="project-image">
+                    <img src="media-files/screen-mockups-movie-database.png" alt="Movie Database Website image example on different screens" />
+            </section>
+
+            <div class="tools-process-container" aria-hidden="true">
+                
+                <section class="tools-and-roles" aria-label="Project role and tools used in the Movie Database project">
+    
+                    <div class="tools-roles-card" aria-hidden="true">
+                        <div class="tools" aria-label="Tools used for this project">
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Adobe XD</li>
+                                <li>React JS</li>
+                                <li>CSS</li>
+                                <li>Trello</li>
+                            </ul>
+                        </div>
+                        <div class="line-separator" aria-hidden="true"></div>
+                        <div class="roles" aria-label="Roles in the Movie Database project">
+                            <h3>Roles</h3>
+                            <ul>
+                                <li>UI/UX Designer</li>
+                                <li>Front-End Web Developer</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="project-links" aria-label="Links to live site and repositories">
+                        <a href="https://">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none" aria-label="GitHub Icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0009 0C34.1499 0 44 10.0976 44 22.5562C44 32.5222 37.6973 40.977 28.9563 43.9601C27.8563 44.1687 27.453 43.4714 27.453 42.8755C27.453 42.3379 27.4732 40.5616 27.4824 38.6763C33.6018 40.041 34.8942 36.0147 34.8942 36.0147C35.8952 33.4076 37.3361 32.714 37.3361 32.714C39.3325 31.3136 37.1858 31.3437 37.1858 31.3437C34.9767 31.5035 33.8144 33.6688 33.8144 33.6688C31.8528 37.1162 28.6685 36.1199 27.4127 35.5429C27.2147 34.0843 26.6446 33.0899 26.0157 32.526C30.9014 31.9565 36.0382 30.0223 36.0382 21.3795C36.0382 18.9171 35.1784 16.904 33.7704 15.325C33.9996 14.7555 34.7531 12.4623 33.5578 9.35517C33.5578 9.35517 31.7098 8.74991 27.5062 11.6672C25.7518 11.1672 23.8708 10.9172 22.0009 10.9078C20.131 10.9172 18.2482 11.1672 16.4901 11.6672C12.292 8.74803 10.4459 9.35517 10.4459 9.35517C9.24878 12.4623 10.0023 14.7555 10.2296 15.325C8.8198 16.904 7.9655 18.9171 7.9655 21.3795C7.9655 30.0429 13.1115 31.9508 18.0099 32.5091C17.2216 33.2083 16.5176 34.5824 16.5176 36.6857C16.5176 39.7045 16.5433 42.133 16.5433 42.8755C16.5433 43.4751 16.1473 44.18 15.0327 43.9582C6.29541 40.9714 0 32.5204 0 22.558C0.00183487 10.0995 9.85192 0 22.0009 0Z" fill="#EAE3C0"/>
+                                <path d="M35.6677 32.3865C35.7154 32.4992 35.8877 32.533 36.0454 32.456C36.2049 32.3828 36.2947 32.2287 36.2434 32.1179C36.1957 32.0033 36.0234 31.9714 35.8639 32.0484C35.7044 32.1198 35.6127 32.2738 35.6677 32.3865Z" fill="#EAE3C0"/>
+                                <path d="M34.7771 33.4053C34.8815 33.5048 35.0869 33.4578 35.2262 33.3019C35.371 33.1442 35.3967 32.9338 35.2904 32.8342C35.1822 32.7347 34.9842 32.7816 34.8394 32.9394C34.6946 33.0953 34.6671 33.3038 34.7771 33.4053Z" fill="#EAE3C0"/>
+                                <path d="M33.9093 34.7039C34.045 34.7997 34.265 34.7096 34.4007 34.5105C34.5363 34.3095 34.5363 34.069 34.397 33.9732C34.2613 33.8774 34.0432 33.9638 33.9057 34.1629C33.7719 34.3658 33.7719 34.6062 33.9093 34.7039Z" fill="#EAE3C0"/>
+                                <path d="M32.7217 35.9595C32.8427 36.0966 33.0993 36.0591 33.2863 35.8731C33.4788 35.6909 33.532 35.4336 33.411 35.2964C33.2882 35.1593 33.0297 35.1988 32.8409 35.3829C32.6502 35.5651 32.5934 35.8243 32.7217 35.9595Z" fill="#EAE3C0"/>
+                                <path d="M31.0814 36.6873C31.1345 36.8639 31.382 36.9446 31.6314 36.8695C31.8807 36.7925 32.0438 36.5859 31.9925 36.4074C31.9412 36.229 31.6919 36.1463 31.4407 36.2271C31.1932 36.3022 31.03 36.5089 31.0814 36.6873Z" fill="#EAE3C0"/>
+                                <path d="M29.2806 36.8228C29.2751 37.0087 29.4859 37.1628 29.7481 37.1665C30.0102 37.1722 30.2247 37.0219 30.2266 36.8397C30.2266 36.6518 30.0194 36.4997 29.7572 36.494C29.4951 36.4884 29.2806 36.6387 29.2806 36.8228Z" fill="#EAE3C0"/>
+                                <path d="M27.6056 36.5313C27.5744 36.7116 27.7559 36.8995 28.0162 36.9483C28.271 36.9971 28.5075 36.8844 28.5405 36.7041C28.5717 36.5182 28.3865 36.3322 28.1317 36.2834C27.8732 36.2364 27.6386 36.3453 27.6056 36.5313Z" fill="#EAE3C0"/>
+                              </svg> GitHub Repository
+                        </a>
+                        <a href="http://">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none" aria-label="Live Site Icon">
+                                <circle cx="19.5" cy="19.5" r="19" stroke="#EAE3C0"/>
+                                <path d="M19.5 0.5C20.3462 0.5 21.2088 0.94431 22.0498 1.86914C22.8908 2.79408 23.6713 4.16014 24.3369 5.89062C25.667 9.34888 26.5 14.1605 26.5 19.5C26.5 24.8395 25.667 29.6511 24.3369 33.1094C23.6713 34.8399 22.8908 36.2059 22.0498 37.1309C21.2088 38.0557 20.3462 38.5 19.5 38.5C18.6538 38.5 17.7912 38.0557 16.9502 37.1309C16.1092 36.2059 15.3287 34.8399 14.6631 33.1094C13.333 29.6511 12.5 24.8395 12.5 19.5C12.5 14.1605 13.333 9.34888 14.6631 5.89062C15.3287 4.16014 16.1092 2.79408 16.9502 1.86914C17.7912 0.94431 18.6538 0.5 19.5 0.5Z" stroke="#EAE3C0"/>
+                                <path d="M1 20H38" stroke="#EAE3C0" stroke-linecap="round"/>
+                              </svg> Live Site
+                        </a>
+                    </div>
+                </section>
+    
+                <section class="toolkit-accordion process-accordion" aria-label="Project process and reflections Accordion">
+                    <article class="toolkit-item">
+                        <button class="accordion-header">
+                            Design
+                            <span class="icon">+</span>
+                          </button>
+                        <div class="accordion-content" aria-label="Design Process">
+                            <p>As a key contributor to this project, I focused on the UX and UI design of the website. Drawing inspiration from various movie sites, I aimed to create an interface that was both user-friendly and intuitive. To bring this vision to life, I started by crafting multiple wireframes, iterating on each one with my team's feedback. Through collaborative refinement, we transformed these wireframes into a high-fidelity mockup that seamlessly blends functionality with aesthetics.</p>
+                        </div>
+                    </article>
+    
+                    <article class="toolkit-item">
+                        <button class="accordion-header">
+                            Development
+                            <span class="icon">+</span>
+                          </button>
+                        <div class="accordion-content" aria-label="Development Process">
+                            <p>During the development phase, our team worked on dynamically displaying data by integrating The Movie Database API to fetch and present movie information in real-time. My role centered on refining the visual experience, focusing on the styling of the homepage, about page, and movie cards to ensure a cohesive and engaging design.</p>
+                        </div>
+                    </article>
+    
+                    <article class="toolkit-item">
+                        <button class="accordion-header">
+                            Reflection
+                            <span class="icon">+</span>
+                          </button>
+                        <div class="accordion-content" aria-label="Reflection on the project">
+                            <p>While working on this project, our team utilized Git and GitHub for version control, emphasizing the importance of coordination and clear communication. Although we were all new to version control platforms, we successfully avoided conflicts by maintaining open discussions about our tasks. Through this experience, I learned the value of proactive collaboration and the significance of being ready to support my team members whenever needed.</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+
+            <section class="connect-button">
+                <a href="#">Get in Touch!</a>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Shyanne Manuel</p>
+    </footer>
+    
+</body>
+</html>
