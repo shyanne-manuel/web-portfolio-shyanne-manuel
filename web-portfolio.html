@@ -93,7 +93,9 @@
                     <p>For my portfolio, I opted for a static site to highlight my skills and foundation in HTML, CSS, and JavaScript. By following best practices—such as semantic markup, proper heading structure, and optimized accessibility—I ensure that each page stands out while remaining user-friendly and SEO-friendly. </p>
                 </div>
                 <div class="project-image">
-                    <img src="media-files/screen-mockups-movie-database.png" alt="Movie Database Website image example on different screens" />
+
+                    <img src="media-files/portfolio-screen-adaptive.png" alt="My Web Portfolio image example on different screens">
+                </div>
             </section>
 
             <div class="tools-process-container" aria-hidden="true">
@@ -151,6 +153,19 @@
                           </button>
                         <div class="accordion-content" aria-label="Design Process">
                             <p>I put careful thought into designing my portfolio, striving for a balance of elegance and functionality. The color scheme plays a key role in bringing that vision to life, reinforcing the refined yet practical aesthetic. Using Figma, I created a detailed wireframe to map out my ideas, ensuring every element aligns with my goal. I embraced a minimal design approach—clean, sophisticated, and user-friendly—while still showcasing my skills in an engaging and visually compelling way.</p>
+                            <picture aria-label="Picture of Movie Database Homepage" class="accordion-image">
+                                <source 
+                                    srcset="media-files/web-portfolio-wireframe-1024.webp 1024w,
+                                            media-files/web-portfolio-wireframe-768.webp 768w,
+                                            media-files/web-portfolio-wireframe-512.webp 512w" 
+                                    sizes="calc(100% - 2rem)"
+                                    media="(max-width: 64em)"
+                                    type="image/webp">
+                                <img 
+                                    src="media-files/web-portfolio-wireframe-1024.jpg"
+                                    alt="Case Work 1: Movie Database Homepage"
+                                    loading="lazy">
+                            </picture>
                         </div>
                     </article>
     
@@ -161,6 +176,10 @@
                           </button>
                         <div class="accordion-content" aria-label="Development Process">
                             <p>During the development phase of my web portfolio, I focused on building a solid structure using semantic HTML, ensuring clean, accessible, and well-organized code. This approach not only improved readability but also enhanced SEO and usability. To bring the design to life, I integrated subtle animations using CSS and JavaScript, adding smooth transitions and interactive elements that elevate the user experience. Every detail, from layout refinement to functionality tweaks, was carefully considered to create a site that is both visually appealing and technically sound.</p>
+                            <video autoplay playsinline muted loop aria-label="Screen record of my Web Portfolio's screen responsiveness" class="video-clip" preload="none">
+                                <source src="media-files/portfolio-reduced.webm" type="video/webm">
+                                <source src="media-files/portfolio-reduced.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </article>
     

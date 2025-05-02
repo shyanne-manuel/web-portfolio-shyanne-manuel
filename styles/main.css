@@ -661,7 +661,7 @@ nav ul {
   }
   .work-card.active {
     opacity: 1;
-    padding: 1rem;
+    padding: 0.5rem;
     flex: 1;
     width: 100%;
   }
@@ -938,7 +938,7 @@ footer:before {
   z-index: -1;
   pointer-events: none;
 }
-@media screen and (min-width: 37.5rem) {
+@media screen and (min-width: 48.0625rem) {
   .project-overview {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1128,6 +1128,15 @@ footer:before {
     margin: 20vh auto 0;
     padding: 1.5rem;
   }
+}
+
+.video-clip,
+.accordion-image {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=main.css.map */

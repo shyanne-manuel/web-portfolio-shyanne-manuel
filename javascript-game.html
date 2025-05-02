@@ -12,10 +12,6 @@
           href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="favicon.ico" sizes="any"> 
-        <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-        <link rel="manifest" href="site.webmanifest" />
       </head>
 <body>
     <header>
@@ -92,8 +88,10 @@
                 <div class="project-description">
                     <p>This classic Snake game is built using JavaScript, serving as a hands-on project to refine my coding skills. Throughout development, I experimented with various commands, deepening my understanding of JavaScript while sharpening my logical thinking and problem-solving abilities.</p>
                 </div>
-                <div class="project-image">
-                    <img src="media-files/javascript-game.png" alt="Movie Database Website image example on different screens" />
+                <video autoplay playsinline muted loop aria-label="Screen record of the JavaScript Snake Game Web App" class="video-clip" preload="none">
+                    <source src="media-files/javascript-reduced.webm" type="video/webm">
+                    <source src="media-files/javascript-reduced.mp4" type="video/mp4">
+                </video>
             </section>
 
             <div class="tools-process-container" aria-hidden="true">
@@ -151,6 +149,19 @@
                           </button>
                         <div class="accordion-content" aria-label="Design Process">
                             <p>I kicked off the design process by putting together a high-fidelity wireframe in Adobe XD. It really helped me get a clear picture of how I wanted the app to look and made me think through the features I needed to include to make the game fun and functional.</p>
+                            <picture aria-label="Picture of Movie Database Homepage" class="accordion-image">
+                                <source 
+                                    srcset="media-files/javascript-wireframe-1024.webp 1024w,
+                                            media-files/javascript-wireframe-768.webp 768w,
+                                            media-files/javascript-wireframe-512.webp 512w" 
+                                    sizes="calc(100% - 2rem)"
+                                    media="(max-width: 64em)"
+                                    type="image/webp">
+                                <img 
+                                    src="media-files/javascript-wireframe-1024.jpg"
+                                    alt="Case Work 1: Movie Database Homepage"
+                                    loading="lazy">
+                            </picture>
                         </div>
                     </article>
     

@@ -87,13 +87,25 @@
                 <p>Where creativity meets code</p>
     
             </section>
-            <section id="works" class="works-container" aria-label="Collection of My Works">
+            <section id="works" class="works-container">
                 <h2>Case Works</h2> 
                 <div class="work-cards-container">
                     <article class="work-card active">
                         <div class="work-card-image">
-                            <img src="media-files/movie-database.jpg" alt="Portfolio 1: Movie Database" />
-                        </div>
+                            <picture aria-label="Picture of Movie Database Homepage">
+                                <source 
+                                    srcset="media-files/movie-database-1024.webp 1024w,
+                                            media-files/movie-database-768.webp 768w,
+                                            media-files/movie-database-512.webp 512w" 
+                                    sizes="calc(100% - 2rem)"
+                                    media="(max-width: 64em)"
+                                    type="image/webp">
+                                <img 
+                                    src="media-files/movie-database-1024.jpg"
+                                    alt="Case Work 1: Movie Database Homepage"
+                                    loading="lazy">
+                            </picture>
+                            
                         <div class="work-card-content">
                             <h3>FilmZone Movie Database</h3>
                             <p>React | CSS | REST API</p>
@@ -104,7 +116,19 @@
     
                     <article class="work-card">
                         <div class="work-card-image">
-                            <img src="media-files/javascript-game.png" alt="Portfolio 2: JavaScript" />
+                            <picture>
+                                <source 
+                                    srcset="media-files/javascript-game-1024.webp 1024w,
+                                            media-files/javascript-game-768.webp 768w,
+                                            media-files/javascript-game-512.webp 512w" 
+                                    sizes="calc(100% - 2rem)"
+                                    media="(max-width: 64em)"
+                                    type="image/webp">
+                                <img 
+                                    src="media-files/javascript-game-1024.jpg"
+                                    alt="Case Work 2: Javascript Game App Main Menu"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="work-card-content">
                             <h3>Snake Game Javascript</h3>
@@ -116,7 +140,19 @@
     
                     <article class="work-card">
                         <div class="work-card-image">
-                            <img src="media-files/capstone.png" alt="Portfolio 3: Ecommerce Site" />
+                            <picture>
+                                <source 
+                                    srcset="media-files/capstone-1024.webp 1024w,
+                                            media-files/capstone-768.webp 768w,
+                                            media-files/capstone-512.webp 512w" 
+                                    sizes="calc(100% - 2rem)"
+                                    media="(max-width: 64em)"
+                                    type="image/webp">
+                                <img 
+                                    src="media-files/capstone-1024.jpg"
+                                    alt="Case Work 3: Ecommerce WordPress Homepage"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="work-card-content">
                             <h3>Isla Wander Ecommerce Site</h3>
@@ -127,7 +163,19 @@
     
                     <article class="work-card">
                         <div class="work-card-image">
-                            <img src="media-files/web-portfolio.png" alt="Portfolio 1: Static Site" />
+                            <picture>
+                                <source 
+                                    srcset="media-files/portfolio-1024.webp 1024w,
+                                            media-files/portfolio-768.webp 768w,
+                                            media-files/portfolio-512.webp 512w" 
+                                    sizes="calc(100% - 2rem)"
+                                    media="(max-width: 64em)"
+                                    type="image/webp">
+                                <img 
+                                    src="media-files/portfolio-1024.jpg"
+                                    alt="Case Work 3: Ecommerce WordPress Homepage"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="work-card-content">
                             <h3>Web Portfolio</h3>

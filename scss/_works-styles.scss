@@ -34,7 +34,7 @@
   @include glassmorphism(10px, 20px);
   z-index: 1;
 
-  @include tablet-large {
+  @include desktop-large {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
@@ -234,4 +234,16 @@
       padding: 1.5rem;
     }
   }
+}
+
+
+// videos and medias
+
+.video-clip,
+.accordion-image {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px; 
+  margin: 1rem auto;
 }
