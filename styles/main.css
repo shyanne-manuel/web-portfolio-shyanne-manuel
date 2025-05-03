@@ -833,6 +833,13 @@ nav ul {
   padding: 0.75rem 1rem;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.toolkit-accordion .accordion-content ul li i {
+  font-size: 1.5rem;
 }
 .toolkit-accordion .accordion-content ul p {
   text-align: justify;
@@ -1047,6 +1054,13 @@ footer:before {
   padding-left: 1rem;
   padding-bottom: 0.5rem;
   gap: 0.5rem;
+}
+.tools-and-roles .tools-roles-card .tools ul li,
+.tools-and-roles .tools-roles-card .roles ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
 }
 .tools-and-roles .tools-roles-card .line-separator {
   width: 50%;
