@@ -20,14 +20,15 @@ function removeActiveClass() {
     });
 }
 
+// Accordion Functionalities
 accordionHeaders.forEach((header) => {
     header.addEventListener('click', () => {
       const parent = header.parentElement;
 
-      // Toggle active class
+
       parent.classList.toggle('active');
 
-      // Close other accordions
+
       document.querySelectorAll('.toolkit-item').forEach((item) => {
         if (item !== parent) {
           item.classList.remove('active');
@@ -42,10 +43,10 @@ accordionHeaders.forEach((header) => {
 // center vertical line animations
 
 window.addEventListener('scroll', () => {
-    // Get the current scroll position
+
     const scrollPosition = window.scrollY;
     console.log(`Scroll Position: ${scrollPosition}`); 
-    // Update the CSS variable for translateY
+
     verticalLine.style.setProperty('--translateY', `${scrollPosition}px`);
   });
 

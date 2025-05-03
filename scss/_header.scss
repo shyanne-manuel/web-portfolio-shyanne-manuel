@@ -9,13 +9,6 @@
 
   .logo {
     @include flex-default-center(row, center, center);
-    // p {
-    //     font-family: $font-heading;
-    //     font-size: clamp(2.5rem, 4vw, 3.5rem);
-    //     font-weight: 700;
-    //     margin: 0;
-    //     display: inline-block;
-    // }
 
     svg {
       width: clamp(4rem, 7vw, 6.25rem);
