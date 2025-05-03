@@ -6,7 +6,10 @@
         <title>Shyanne Manuel | Movie Database - React JS</title>
         <meta name="description" content="Discover our React-powered Movie Database, seamlessly integrating TMDB API for real-time data, optimized for UX/UI, responsiveness, and teamwork.">
         <script src="js/script.js" defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
         <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -35,9 +38,6 @@
                     </defs>
                   </svg>
             </a>
-            <button class="theme-toggle" id="theme-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#C8B269"><path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Z"/></svg>
-            </button>
             
         </div>
         <nav>
@@ -90,7 +90,8 @@
                 <p>A React Based Website</p>
             </section>
 
-            <section class="project-overview" aria-label="Movie Database Website project overview">
+            <section class="project-overview" data-aos="fade-up"
+            data-aos-duration="3000" aria-label="Movie Database Website project overview">
                 <div class="project-description">
                     <p>This dynamic movie database is built using React.js, CSS for visually appealing and responsive design and integration with TMDB API to fetch real-time data. For this project, I collaboratively worked with two colleagues. We decided to use the design mockup I created and worked our way to create our first functioning Headless CMS website.</p>
                 </div>
@@ -102,16 +103,17 @@
 
             <div class="tools-process-container" aria-hidden="true">
                 
-                <section class="tools-and-roles" aria-label="Project role and tools used in the Movie Database project">
+                <section class="tools-and-roles" data-aos="fade-up"
+                data-aos-duration="3000" aria-label="Project role and tools used in the Movie Database project">
     
                     <div class="tools-roles-card" aria-hidden="true">
                         <div class="tools" aria-label="Tools used for this project">
                             <h3>Tools</h3>
                             <ul>
-                                <li>Adobe XD</li>
-                                <li>React JS</li>
-                                <li>CSS</li>
-                                <li>Trello</li>
+                                <li><i class="fa-solid fa-pen-nib"></i>Adobe XD</li>
+                                <li><i class="fa-brands fa-react"></i>React JS</li>
+                                <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                                <li><i class="fa-brands fa-trello"></i>Trello</li>
                             </ul>
                         </div>
                         <div class="line-separator" aria-hidden="true"></div>
@@ -147,7 +149,8 @@
                     </div>
                 </section>
     
-                <section class="toolkit-accordion process-accordion" aria-label="Project process and reflections Accordion">
+                <section class="toolkit-accordion process-accordion" data-aos="fade-up"
+                data-aos-duration="3000" aria-label="Project process and reflections Accordion">
                     <article class="toolkit-item">
                         <button class="accordion-header">
                             Design

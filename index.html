@@ -6,7 +6,10 @@
     <title>Shyanne Manuel | Front-End Web Developer and UX/UI Designer</title>
     <meta name="description" content="I'm a front-end web developer who loves to build responsive, cross-browser beautiful websites. Continuously learning and evolving in the dynamic web world." />
     <script src="js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,13 +39,6 @@
                   </svg>
             </a>
             <!-- Theme Switch will for now disabled ;; work on this after the program -->
-            <!-- <button class="theme-toggle" id="theme-toggle">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#C8B269"><path d="M480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-252q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm0 140 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Z"/></svg> -->
-                <!-- Darkmode Icon -->
-                <!-- <svg  class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                    <path d="M27 0C21.6599 0 16.4397 1.58352 11.9996 4.55032C7.55949 7.51712 4.09883 11.7339 2.05526 16.6675C0.0116986 21.6011 -0.522991 27.0299 0.518809 32.2674C1.56061 37.5049 4.13211 42.3159 7.90813 46.0919C11.6841 49.8679 16.4951 52.4394 21.7326 53.4812C26.9701 54.523 32.3989 53.9883 37.3325 51.9447C42.2661 49.9012 46.4829 46.4405 49.4497 42.0004C52.4165 37.5603 54 32.3401 54 27C53.9911 25.6347 53.8901 24.2715 53.6978 22.9198C52.3288 24.8351 50.5592 26.4293 48.5119 27.5915C46.4646 28.7538 44.1887 29.4563 41.8425 29.6501C39.4963 29.844 37.136 29.5245 34.9257 28.714C32.7154 27.9035 30.7081 26.6214 29.0434 24.9567C27.3786 23.2921 26.0964 21.2849 25.2858 19.0746C24.4752 16.8643 24.1557 14.5041 24.3494 12.1578C24.5431 9.81159 25.2455 7.53569 26.4077 5.48833C27.5699 3.44097 29.164 1.67127 31.0792 0.302239C29.7278 0.109919 28.365 0.0089438 27 0Z" fill="#C8B269"/>
-                  </svg>
-            </button> -->
             
         </div>
         <nav>
@@ -94,113 +90,118 @@
                 <p>Where creativity meets code</p>
     
             </section>
-            <section id="works" class="works-container">
-                <h2>Case Works</h2> 
-                <div class="work-cards-container">
-                    <article class="work-card active">
-                        <div class="work-card-image">
-                            <picture aria-label="Picture of Movie Database Homepage">
-                                <source 
-                                    srcset="media-files/movie-database-1024.webp 1024w,
-                                            media-files/movie-database-768.webp 768w,
-                                            media-files/movie-database-512.webp 512w" 
-                                    sizes="calc(100% - 2rem)"
-                                    media="(max-width: 64em)"
-                                    type="image/webp">
-                                <img 
-                                    src="media-files/movie-database-1024.jpg"
-                                    alt="Case Work 1: Movie Database Homepage"
-                                    loading="lazy">
-                            </picture>
-                            
-                        <div class="work-card-content">
-                            <h3>FilmZone Movie Database</h3>
-                            <p>React | CSS | REST API</p>
-                            <a href="movie-database.html" class="view-project" aria-label="Go to Movie Database Page">View Project</a>
-                        </div>
-    
-                    </article>
-    
-                    <article class="work-card">
-                        <div class="work-card-image">
-                            <picture>
-                                <source 
-                                    srcset="media-files/javascript-game-1024.webp 1024w,
-                                            media-files/javascript-game-768.webp 768w,
-                                            media-files/javascript-game-512.webp 512w" 
-                                    sizes="calc(100% - 2rem)"
-                                    media="(max-width: 64em)"
-                                    type="image/webp">
-                                <img 
-                                    src="media-files/javascript-game-1024.jpg"
-                                    alt="Case Work 2: Javascript Game App Main Menu"
-                                    loading="lazy">
-                            </picture>
-                        </div>
-                        <div class="work-card-content">
-                            <h3>Snake Game Javascript</h3>
-                            <p>HTML | CSS | JavaScript</p>
-                            <a href="javascript-game.html" class="view-project" aria-label="Go to JavaScript game page">View Project</a>
-                        </div>
-    
-                    </article>
-    
-                    <article class="work-card">
-                        <div class="work-card-image">
-                            <picture>
-                                <source 
-                                    srcset="media-files/capstone-1024.webp 1024w,
-                                            media-files/capstone-768.webp 768w,
-                                            media-files/capstone-512.webp 512w" 
-                                    sizes="calc(100% - 2rem)"
-                                    media="(max-width: 64em)"
-                                    type="image/webp">
-                                <img 
-                                    src="media-files/capstone-1024.jpg"
-                                    alt="Case Work 3: Ecommerce WordPress Homepage"
-                                    loading="lazy">
-                            </picture>
-                        </div>
-                        <div class="work-card-content">
-                            <h3>Isla Wander Ecommerce Site</h3>
-                            <p>WordPress | WooCommerce</p>
-                            <a href="wordpress-site.html" class="view-project">View Project</a>
-                        </div>
-                    </article>
-    
-                    <article class="work-card">
-                        <div class="work-card-image">
-                            <picture>
-                                <source 
-                                    srcset="media-files/portfolio-1024.webp 1024w,
-                                            media-files/portfolio-768.webp 768w,
-                                            media-files/portfolio-512.webp 512w" 
-                                    sizes="calc(100% - 2rem)"
-                                    media="(max-width: 64em)"
-                                    type="image/webp">
-                                <img 
-                                    src="media-files/portfolio-1024.jpg"
-                                    alt="Case Work 3: Ecommerce WordPress Homepage"
-                                    loading="lazy">
-                            </picture>
-                        </div>
-                        <div class="work-card-content">
-                            <h3>Web Portfolio</h3>
-                            <p>HTML5 | CSS | JavaScript</p>
-                            <a href="web-portfolio.html" class="view-project">View Project</a>
-                        </div>
-    
-                    </article>
-                </div>
-            </section>
+
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                <section id="works" class="works-container">
+                    <h2>Case Works</h2> 
+                    <div class="work-cards-container">
+                        <article class="work-card active">
+                            <div class="work-card-image">
+                                <picture aria-label="Picture of Movie Database Homepage">
+                                    <source 
+                                        srcset="media-files/movie-database-1024.webp 1024w,
+                                                media-files/movie-database-768.webp 768w,
+                                                media-files/movie-database-512.webp 512w" 
+                                        sizes="calc(100% - 2rem)"
+                                        media="(max-width: 64em)"
+                                        type="image/webp">
+                                    <img 
+                                        src="media-files/movie-database-1024.jpg"
+                                        alt="Case Work 1: Movie Database Homepage"
+                                        loading="lazy">
+                                </picture>
+                                
+                            <div class="work-card-content">
+                                <h3>FilmZone Movie Database</h3>
+                                <p>React | CSS | REST API</p>
+                                <a href="movie-database.html" class="view-project" aria-label="Go to Movie Database Page">View Project</a>
+                            </div>
+        
+                        </article>
+        
+                        <article class="work-card">
+                            <div class="work-card-image">
+                                <picture>
+                                    <source 
+                                        srcset="media-files/javascript-game-1024.webp 1024w,
+                                                media-files/javascript-game-768.webp 768w,
+                                                media-files/javascript-game-512.webp 512w" 
+                                        sizes="calc(100% - 2rem)"
+                                        media="(max-width: 64em)"
+                                        type="image/webp">
+                                    <img 
+                                        src="media-files/javascript-game-1024.jpg"
+                                        alt="Case Work 2: Javascript Game App Main Menu"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="work-card-content">
+                                <h3>Snake Game Javascript</h3>
+                                <p>HTML | CSS | JavaScript</p>
+                                <a href="javascript-game.html" class="view-project" aria-label="Go to JavaScript game page">View Project</a>
+                            </div>
+        
+                        </article>
+        
+                        <article class="work-card">
+                            <div class="work-card-image">
+                                <picture>
+                                    <source 
+                                        srcset="media-files/capstone-1024.webp 1024w,
+                                                media-files/capstone-768.webp 768w,
+                                                media-files/capstone-512.webp 512w" 
+                                        sizes="calc(100% - 2rem)"
+                                        media="(max-width: 64em)"
+                                        type="image/webp">
+                                    <img 
+                                        src="media-files/capstone-1024.jpg"
+                                        alt="Case Work 3: Ecommerce WordPress Homepage"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="work-card-content">
+                                <h3>Isla Wander Ecommerce Site</h3>
+                                <p>WordPress | WooCommerce</p>
+                                <a href="wordpress-site.html" class="view-project">View Project</a>
+                            </div>
+                        </article>
+        
+                        <article class="work-card">
+                            <div class="work-card-image">
+                                <picture>
+                                    <source 
+                                        srcset="media-files/portfolio-1024.webp 1024w,
+                                                media-files/portfolio-768.webp 768w,
+                                                media-files/portfolio-512.webp 512w" 
+                                        sizes="calc(100% - 2rem)"
+                                        media="(max-width: 64em)"
+                                        type="image/webp">
+                                    <img 
+                                        src="media-files/portfolio-1024.jpg"
+                                        alt="Case Work 3: Ecommerce WordPress Homepage"
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="work-card-content">
+                                <h3>Web Portfolio</h3>
+                                <p>HTML5 | CSS | JavaScript</p>
+                                <a href="web-portfolio.html" class="view-project">View Project</a>
+                            </div>
+        
+                        </article>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <section id="about" class="about" aria-label="About Me">
-            <div class="about-title">
+            <div class="about-title" data-aos="fade-up"
+            data-aos-duration="3000">
                 <h2>The Making of Me</h2>
                 <h3>A Digital Dream Weaver</h3>
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-up"
+            data-aos-duration="3000">
                 <section class="toolkit-accordion" aria-label="My Toolkit">
                     <h3>My Toolkit</h3>
                     <article class="toolkit-item">
@@ -210,10 +211,18 @@
                           </button>
                         <div class="accordion-content" aria-label="Design Tools">
                             <ul class="tools">
-                             <li>Figma</li>
-                             <li>Adobe XD</li>
-                             <li>Adobe Photoshop</li>
-                             <li>Adobe Illustrator</li>
+                            <li>
+                                <i class="fa-brands fa-figma"></i>
+                                Figma
+                            </li>
+                             <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                    <path d="M0.6875 0.6875V26.3125H26.3125V0.6875H0.6875ZM9.3086 11.5311L10.9435 7.36025H13.7545L10.9016 13.383L13.8212 19.5056H10.9768L9.3086 15.2596L7.64896 19.5056H4.80458L7.72413 13.383L4.86267 7.36025H7.67373L9.3086 11.5311ZM14.4131 14.718C14.4131 13.2386 14.6634 12.135 15.1639 11.4064C15.6645 10.6778 16.3922 10.314 17.3497 10.314C18.0442 10.314 18.6233 10.6146 19.0845 11.2151V6.694H21.4617V19.5065H19.3177L19.2092 18.5891C18.7258 19.3126 18.1022 19.6739 17.3403 19.6739C16.3956 19.6739 15.6739 19.3126 15.1759 18.5891C14.6779 17.8656 14.4234 16.8039 14.4122 15.4031L14.4131 14.718ZM16.7826 15.31C16.7826 16.2 16.8765 16.8219 17.0661 17.1746C17.2558 17.5274 17.5752 17.7042 18.0254 17.7042C18.4926 17.7042 18.8454 17.4958 19.0845 17.079V12.9585C18.8514 12.5134 18.5003 12.2914 18.0339 12.2914C17.6 12.2914 17.2831 12.4665 17.0832 12.8167C16.8834 13.1669 16.7826 13.7904 16.7826 14.6856V15.31Z" fill="#EAE3C0"/>
+                                  </svg>
+                                Adobe XD
+                            </li>
+                            <li><i class="fa-solid fa-images"></i>Adobe Photoshop</li>
+                            <li><i class="fa-solid fa-pen-fancy"></i>Adobe Illustrator</li>
                             </ul>
                         </div>
                     </article>
@@ -224,16 +233,16 @@
                           </button>
                         <div class="accordion-content" aria-label="Development Tools">
                             <ul class="tools">
-                                <li>HTML 5</li>
-                                <li>CSS</li>
-                                <li>SASS/SCSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>WordPress</li>
-                                <li>Shopify</li>
-                                <li>Git/GitHub</li>
+                                <li><i class="fa-brands fa-html5"></i>HTML 5</li>
+                                <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+                                <li><i class="fa-brands fa-sass"></i>SASS/SCSS</li>
+                                <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                                <li><i class="fa-brands fa-react"></i>React</li>
+                                <li><i class="fa-brands fa-php"></i>PHP</li>
+                                <li><i class="fa-solid fa-database"></i>MySQL</li>
+                                <li><i class="fa-brands fa-wordpress"></i>WordPress</li>
+                                <li><i class="fa-brands fa-shopify"></i>Shopify</li>
+                                <li><i class="fa-brands fa-git-alt"></i>Git/GitHub</li>
                             </ul>
                         </div>
                     </article>
@@ -244,16 +253,17 @@
                           </button>
                         <div class="accordion-content" aria-label="Soft Skills">
                             <ul class="tools">
-                                <li>Problem Solving</li>
-                                <li>Adaptability</li>
-                                <li>Creativity</li>
-                                <li>Organized</li>
-                                <li>Collaborative</li>
+                                <li><i class="fa-regular fa-lightbulb"></i>Problem Solving</li>
+                                <li><i class="fa-solid fa-retweet"></i>Adaptability</li>
+                                <li><i class="fa-solid fa-palette"></i>Creativity</li>
+                                <li><i class="fa-solid fa-sitemap"></i>Organized</li>
+                                <li><i class="fa-solid fa-people-carry-box"></i>Collaborative</li>
                             </ul>
                         </div>
                     </article>
                 </section>
-                <div class="about-info">
+                <div class="about-info" data-aos="fade-up"
+                data-aos-duration="3000">
                     <p>Hey I'm Shyanne!</p>
                     <p>I've always been drawn to creativity and problem-solving. One of my ways to bring my ideas to life is through building visually appealing websites. My journey into web development started back in high school when I tackled my first-ever website for a project. I found this really cool animation that I wanted to try. At that point, the only thing I knew was the classic “Hello, World!” in raw HTML. But that wasn't going to cut it. I dove deep into research, figuring things out one step at a time until my vision became reality.</p>
                     <p>Fast forward a few years, and I decided to take things to the next level by enrolling in the Front-End Web Developer Program at BCIT. And now? Here I am, coding my way through ideas, making things happen, and always hungry to learn more.</p>

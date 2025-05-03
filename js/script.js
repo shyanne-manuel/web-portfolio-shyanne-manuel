@@ -6,6 +6,8 @@ const accordionHeaders = document.querySelectorAll('.accordion-header');
 
 console.log(workCard);
 
+AOS.init();
+
 workCard.forEach((card) => {
     card.addEventListener('click', () => {
         console.log(card);
